@@ -1,0 +1,148 @@
+.music-player {
+    width: 100%;
+    background: #303030;
+    height: 100%;
+  
+    .playlist {
+      display: flex;
+      flex-flow: column nowrap;
+  
+      .header {
+        display: flex;
+        padding: 1rem 2rem;
+        flex-flow: row nowrap;
+        font-size: 1em;
+        color: #ffffffe6;
+        box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+  
+        .num {
+          flex: 1;
+        }
+  
+        .title {
+          flex: 3;
+        }
+  
+        .plat {
+          flex: 1;
+        }
+  
+        .play {
+          flex: 1;
+        }
+      }
+  
+      .song-row {
+        margin: 0 2rem;
+        color: #ffffffe6;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid hsla(0,0%,100%,.12);
+  
+        .source-icon {
+          flex: 1;
+          transform: scale(0.4);
+        }
+  
+        .counter {
+          flex: 1;
+          color: #ffffffe6;
+          font-size: 1rem;
+        }
+  
+        .song-name {
+          flex: 3;
+          font-weight: 400;
+          color: #fff;
+        }
+  
+        .song-button {
+          flex: 1;
+          padding: 1em;
+          margin: 1em;
+          background: #1db954;
+          color: #ffffffe6;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%),
+            0 2px 2px 0 rgb(0 0 0 / 14%),
+            0 1px 5px 0 rgb(0 0 0 / 12%);
+        }
+  
+        .song-button:active {
+          background:#26f16d !important;
+          transform: translateY(4px);
+        }
+      }
+  
+    }
+
+    .new-rows {
+      height: calc(100% - 64px);
+      overflow-y: scroll;
+
+      .song-row {
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: 1em 0;
+        justify-content: flex-start;
+        box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+        border-radius: 4px;
+        margin: 1em;
+        font-size: 16px;
+        background: #424242;
+
+        .song-name {
+          width: 300px;
+        }
+
+        button {
+          border: none;
+          background: none;
+          cursor: pointer;
+        }
+
+        span {
+          margin: 0 1em;
+          cursor: default;
+        }
+      }
+    }
+
+    .commands {
+      position: fixed;
+      bottom: 0;
+      height: 64px;
+      width: 100%;
+      border-top: 1px solid #424242;
+      z-index: 999;
+
+      .command-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px;
+
+        button {
+          border: none;
+          background: #424242;
+          color: white;
+          padding: 16px 32px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .player-modal {
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  

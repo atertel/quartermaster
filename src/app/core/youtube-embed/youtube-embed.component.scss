@@ -1,0 +1,21 @@
+.video-frame {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    padding: 2em 0;
+  
+    .exit-button {
+      padding: 16px 64px;
+      margin: 2em;
+      background-color: #f44336;
+      color: #ffffffe6;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 3px 1px -2px #0003, 0 2px 2px 0 #00000024, 0 1px 5px 0 #0000001f;
+    }
+}
+  

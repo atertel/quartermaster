@@ -1,0 +1,42 @@
+<main class="music-player">
+    <!-- <section class="playlist">
+      <div class="header">
+        <span class="num">#</span>
+        <span class="title">Title</span>
+        <span class="plat">Platform</span>
+        <span class="play"> </span>
+      </div>
+      <div class="song-row" *ngFor="let song of playlist; let i = index">
+        <span class="counter">{{ i + 1 }}</span>
+        <span class="song-name">{{ song.songName }}</span>
+        <img [src]="song.icon" width="24" class="source-icon">
+        <button (click)="playMusic(song)" class="song-button">
+          <img width="50" src="../../../assets/play_arrow_white_24dp.svg">
+        </button>
+      </div>
+    </section> -->
+  
+    <section class="new-rows">
+      <div class="song-row" *ngFor="let song of playlist; let i = index">
+        <button (click)="playMusic(song)" class="song-button">
+          <img width="50" src="../../../assets/play_arrow_white_24dp.svg">
+        </button>
+        <span class="song-name">{{ song.songName }}</span>
+        <span class="song-plat">{{ song.platform }}</span>
+      </div>
+    </section>
+
+    <section class="commands">
+      <div class="command-row">
+        <button (click)="hijackAudio()">Hijack Audio</button>
+        <button (click)="spawnDiscord()">Spawn Discord</button>
+      </div>
+    </section>
+
+    <section class="player-modal hidden-modal">
+      <ng-container #ytPlayerlayer></ng-container>
+      <ng-container #spotPlayerlayer></ng-container>
+      <ng-container #filePlayerlayer></ng-container>
+    </section>
+</main>
+  

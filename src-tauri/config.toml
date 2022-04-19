@@ -1,0 +1,53 @@
+token = "ODYyMDU4Mjg0NDkxNzM1MDYx.YOS0vA.adL6NGWlElOs_tXKKo_w5c8AQhI"
+
+# Platforms: youtube, spotify, local
+# yt_video_id is that unique code afer embed/ in the url and is REQUIRED TO MAKE YOUTUBE VIDEOS LOOP, its easier for you to copy paste than for me to parse, or im lazy, pick one
+# fileType is REQUIRED FOR LOCAL FILES because i don't feel like extracting it myself, lookup types here under Media Types
+
+[playlist1]
+platform = "youtube"
+url = "https://www.youtube.com/embed/krdPuyUR8ZA"
+title = "FFX Recap Music"
+loops = true
+yt_video_id = "krdPuyUR8ZA"
+file_type = ""
+
+[playlist2]
+platform = "youtube"
+url = "https://www.youtube.com/embed/BZrP0RvMbHY"
+title = "Geass Battle Music"
+loops = true
+yt_video_id = "BZrP0RvMbHY"
+file_type = ""
+
+[playlist3]
+platform = "youtube"
+url = "https://www.youtube.com/watch?v=ThNwUbJu2Js&list=PLS-VFMeLklgLOCl2gpThcI3swhYh8s6YN"
+title = "Forest music"
+loops = false
+yt_video_id = ""
+file_type = ""
+
+[playlist4]
+platform = "spotify"
+url = "https://open.spotify.com/embed/playlist/2mtlhuFVOFMn6Ho3JmrLc2"
+title = "Programming playlist"
+loops = true
+yt_video_id = ""
+file_type = ""
+
+[playlist5]
+platform = "local"
+url = "assets\\License_to_Bonk_Gilmyrs_Theme.mp3"
+title = "A surprise to be sure"
+loops = true
+yt_video_id = ""
+file_type = ""
+
+[playlist6]
+platform = "youtube"
+url = ""
+title = ""
+loops = true
+yt_video_id = ""
+file_type = ""
